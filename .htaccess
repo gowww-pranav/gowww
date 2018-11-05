@@ -1,7 +1,7 @@
 #Force non-www:
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.gowww\.org.in [NC]
-RewriteRule ^(.*)$ http://gowww.org.in/$1 [L,R=301]
+RewriteRule ^(.*)$ https://gowww.org.in/$1 [L,R=301]
 
 ### Force HTTPS
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
