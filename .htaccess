@@ -1,0 +1,8 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nadig.in [NC]
+RewriteRule ^(.*)$ https://www.nadig.in/$1 [L,R=301,NC]
+
+### Force HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
