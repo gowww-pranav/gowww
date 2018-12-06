@@ -30,7 +30,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="js/scroll.js"></script>
 </head>
-<body class="bg-primary">
+<body class="bg-light" data-spy="scroll" data-target=".navbar" data-offset="50" id="page-top">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5PPNN"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -59,8 +59,30 @@
     })
 </script>
 
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="nav nav-pills justify-content-center d-flex flex-md-fill">
+        <li class="nav-item">
+            <a class="nav-link" href="#page-top">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#register">Register</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+
 <div class="col-sm-12 col-lg-12 mx-auto mt-4">
-<div class="jumbotron">
     <div class="container">
     <section>
     <div class="row mb-5">
@@ -229,7 +251,6 @@
         <hr>
     <p class="text-center lead"><a href="mailto:meetings@gowww.org.in?cc=pranav@gowww.org.in, s@gowww.org.in" data-toggle="tooltip" data-placement="top" title="meetings@gowww.org.in" target="_blank">Email Us!</a></p>
         <p class="text-center lead">&copy; GoWWW 2018</p>
-</div>
 </div>
 </div>
 
